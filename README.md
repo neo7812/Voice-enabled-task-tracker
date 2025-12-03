@@ -1,20 +1,20 @@
-# 🎙️ Voice-Enabled Task Tracker
+#  Voice-Enabled Task Tracker
 
 A modern task management application with intelligent voice input powered by AI. Create tasks naturally by speaking, and let AI extract the details.
 
 ![Demo](demo.gif)
 
-## ✨ Features
+##  Features
 
-- 🎤 **Voice Input**: Speak naturally to create tasks
-- 🤖 **AI-Powered Parsing**: Intelligent extraction of title, priority, due dates
-- 📊 **Dual Views**: Kanban board and list view
-- 🔍 **Advanced Filters**: Search and filter by status, priority, due date
-- ✏️ **Full CRUD**: Create, read, update, delete tasks
-- 📱 **Responsive Design**: Works on desktop and mobile
-- 💾 **Persistent Storage**: MongoDB backend with real-time sync
+-  **Voice Input**: Speak naturally to create tasks
+-  **AI-Powered Parsing**: Intelligent extraction of title, priority, due dates
+-  **Dual Views**: Kanban board and list view
+-  **Advanced Filters**: Search and filter by status, priority, due date
+-  **Full CRUD**: Create, read, update, delete tasks
+-  **Responsive Design**: Works on desktop and mobile
+-  **Persistent Storage**: MongoDB backend with real-time sync
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -51,7 +51,7 @@ npm start
 - Frontend: http://localhost:3000
 - Backend: http://localhost:5000
 
-## 🔧 Configuration
+##  Configuration
 
 ### Environment Variables
 
@@ -76,7 +76,7 @@ REACT_APP_API_URL=http://localhost:5000/api
    - Create API key in settings
    - Add to backend `.env`
 
-## 📖 Usage Examples
+##  Usage Examples
 
 ### Voice Input Examples
 
@@ -110,7 +110,7 @@ Result: High priority task due next Wednesday at 6 PM
 - **Low**: low priority, minor, small, whenever
 - **Medium**: (default if no keywords)
 
-## 🏗️ Architecture
+##  Architecture
 
 ### Tech Stack
 
@@ -129,26 +129,24 @@ Result: High priority task due next Wednesday at 6 PM
 ### Project Structure
 
 ```
-voice-task-tracker/
+task-tracker/
 ├── frontend/               # React application
 │   ├── src/
-│   │   ├── components/    # UI components
 │   │   ├── services/      # API and voice services
 │   │   ├── hooks/         # Custom React hooks
-│   │   └── App.jsx        # Main app component
+│   │   └── App.js         # Main app component
 │   └── package.json
 ├── backend/               # Express API
 │   ├── src/
 │   │   ├── models/       # MongoDB models
 │   │   ├── routes/       # API routes
-│   │   ├── controllers/  # Business logic
 │   │   ├── services/     # AI parsing service
 │   │   └── server.js     # Entry point
 │   └── package.json
 └── README.md
 ```
 
-## 📡 API Documentation
+##  API Documentation
 
 ### Endpoints
 
@@ -196,9 +194,7 @@ Content-Type: application/json
 DELETE /api/tasks/:id
 ```
 
-See [API Documentation](docs/API.md) for detailed information.
-
-## 🎯 Design Decisions
+##  Design Decisions
 
 ### Why These Choices?
 
@@ -216,7 +212,7 @@ See [API Documentation](docs/API.md) for detailed information.
 - Tasks are personal (no sharing/collaboration)
 - Internet connection available for AI parsing
 
-## 🤖 AI Tools Used
+##  AI Tools Used
 
 ### Development Process
 
@@ -240,44 +236,8 @@ See [API Documentation](docs/API.md) for detailed information.
 - Iterative prompting yields better results
 - Always validate AI-generated code for edge cases
 
-## 🧪 Testing
 
-```bash
-# Backend tests
-cd backend
-npm test
-
-# Frontend tests
-cd frontend
-npm test
-```
-
-## 🚢 Deployment
-
-### Heroku (Backend)
-
-```bash
-heroku create your-app-name
-heroku config:set MONGODB_URI=your_mongodb_uri
-heroku config:set ANTHROPIC_API_KEY=your_api_key
-git push heroku main
-```
-
-### Vercel (Frontend)
-
-```bash
-npm install -g vercel
-cd frontend
-vercel --prod
-```
-
-### Docker
-
-```bash
-docker-compose up -d
-```
-
-## 🐛 Known Limitations
+##  Known Limitations
 
 1. Voice input requires Chrome/Edge browser
 2. AI parsing works best with English language
@@ -285,47 +245,10 @@ docker-compose up -d
 4. No offline support (requires internet for AI)
 5. Single-user only (no multi-tenant support)
 
-## 🔮 Future Enhancements
 
-- [ ] Drag-and-drop for Kanban board
-- [ ] Recurring tasks support
-- [ ] Multi-user authentication
-- [ ] Real-time collaboration (WebSocket)
-- [ ] Mobile app (React Native)
-- [ ] Offline mode (PWA)
-- [ ] Email notifications
-- [ ] Analytics dashboard
-- [ ] Integration with calendar apps
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📝 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
-
-- [Linear](https://linear.app) for design inspiration
-- [Anthropic](https://anthropic.com) for Claude API
-- [Lucide](https://lucide.dev) for beautiful icons
-- [MongoDB](https://mongodb.com) for database
-
-## 📞 Contact
-
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
-
-Project Link: [https://github.com/yourusername/voice-task-tracker](https://github.com/yourusername/voice-task-tracker)
-
-Demo Video: [Watch on Loom](https://loom.com/your-video-link)
-
----
 
 **⭐ If you found this project helpful, please give it a star!**
